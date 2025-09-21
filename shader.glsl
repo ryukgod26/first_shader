@@ -20,7 +20,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     
     
      uv = fract(uv * 1.5) - 0.5;
-    float d  = length(uv) * exp(-length(uv0));
+    float d  = length(uv) +i*.4 +exp(-length(uv0));
     
     d = sin(d*8. + iTime )/8.;
   //  d -= 0.5;
